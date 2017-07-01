@@ -1,5 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="jumbotron">
-  <h1>Welcome to Our App!</h1>
-</div>
+<header>
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">My Angular 2 App!</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Welcome to Our App!</h1>
+    <div *ngIf="users">
+      <div *ngFor="let user of users">
+        The user is {{ user.name}} ({{user.ussername}}).
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<footer class="text-center">
+  Made in order to improve my Angular 2 skills and knowledge. Visit my Github profile at https://github.com/pabloimrik17
+</footer>
 
