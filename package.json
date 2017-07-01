@@ -1,0 +1,23 @@
+{
+  "name": "FirstAngular2App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite" : "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabloimrik17/FirstAngular2App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloimrik17/FirstAngular2App/issues"
+  },
+  "homepage": "https://github.com/pabloimrik17/FirstAngular2App#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
