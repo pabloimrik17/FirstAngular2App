@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   users = [
-    { id: 25, name: "Pablo", ussername: "pabloimrik17" },
-    { id: 26, name: "Nick", ussername: "nickuser" },
-    { id: 27, name: "Holly", ussername: "hollyuser" }
-  ]
+    { id: 25, name: "Pablo", username: "pabloimrik17" },
+    { id: 26, name: "Nick", username: "nickuser" },
+    { id: 27, name: "Holly", username: "hollyuser" }
+  ];
+
+  activeUser;
+
+  selectUser(user) {
+    this.activeUser = user;
+  }
 }
