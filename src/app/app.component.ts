@@ -13,7 +13,7 @@ export class AppComponent {
     { id: 27, name: "Holly", username: "hollyuser" }
   ];
 
-  activeUser: User;
+  activeUser : User;
 
   selectUser(user) {
     this.activeUser = user;
