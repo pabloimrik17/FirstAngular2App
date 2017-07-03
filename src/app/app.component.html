@@ -19,15 +19,7 @@
       </div>
     </div>
     <div class="col-sm-8">
-      <div class="jumbotron" *ngIf="activeUser">
-        <h2>{{activeUser.name}} <small>{{activeUser.username}}</small></h2>
-        <input class="form-control" [(ngModel)]="activeUser.username"/>
-      </div>
-
-      <div class="jumbotron" *ngIf="!activeUser">
-        <span class="glyphicon glyphicon-hand-left"></span>
-        <h2>Choose a user</h2>
-      </div>
+      <user-profile [user]="activeUser"></user-profile>
     </div>
   </div>
 

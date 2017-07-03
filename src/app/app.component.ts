@@ -6,6 +6,7 @@ import { User } from './shared/models/user';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   users: User[] = [
     { id: 25, name: "Pablo", username: "pabloimrik17" },
