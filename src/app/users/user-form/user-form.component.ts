@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { User } from '../../shared/models/user';
 
 @Component({
@@ -7,11 +7,13 @@ import { User } from '../../shared/models/user';
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent {
+  @Output() userCreated = new EventEmitter();
   newUser : User = new User();
 
-
   onSubmit() {
-    console.log("HOLA");
+    this.userCreated.emit({ user: this.newUser });
+
+    this.newUser = new User();
   }
 
 }
