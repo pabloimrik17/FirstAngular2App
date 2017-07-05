@@ -1,11 +1,12 @@
-<form>
+<form #form="ngForm"> <!-- Con la directiva ngForm hacemos que se valide el form segun nuestras reglas -->
+
   <div class="form-group">
-    <input type="text" class="form-control" name="name" required/>
+    <input type="text" class="form-control" name="name" required [(ngModel)]="newUser.name" #name="ngModel"/>
   </div>
 
   <div class="form-group">
-    <input type="text" class="form-control" name="username" required/>
+    <input type="text" class="form-control" name="username" required [(ngModel)]="newUser.username" #name="ngModel" />
   </div>
 
-  <button type="submit" class="btn btn-lg btn-block btn-primary">Create User</button>
+  <button type="submit" class="btn btn-lg btn-block btn-primary" [disabled]="form.invalid" >Create User</button>
 </form>

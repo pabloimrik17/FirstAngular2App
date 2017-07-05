@@ -7,5 +7,5 @@ import { User } from '../../shared/models/user';
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent {
-
+  newUser : User = new User();
 }
