@@ -8,4 +8,10 @@ import { User } from '../../shared/models/user';
 })
 export class UserFormComponent {
   newUser : User = new User();
+
+
+  onSubmit() {
+    console.log("HOLA");
+  }
+
 }

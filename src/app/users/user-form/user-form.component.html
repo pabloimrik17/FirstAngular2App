@@ -1,4 +1,4 @@
-<form #form="ngForm"> <!-- Con la directiva ngForm hacemos que se valide el form segun nuestras reglas -->
+<form #form="ngForm" (ngSubmit)="onSubmit(); form.reset()" > <!-- Con la directiva ngForm hacemos que se valide el form segun nuestras reglas -->
 
   <div class="form-group" [ngClass]="{'has-error': name.invalid && name.touched}">
     <input type="text" class="form-control" name="name" required placeholder="Name" [(ngModel)]="newUser.name" #name="ngModel"/>
